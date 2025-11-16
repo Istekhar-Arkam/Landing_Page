@@ -4,6 +4,7 @@ import PageTransition from "./components/PageTransition";
 import ScrollVelocity from "./components/ScrollVelocity";
 import TiltedCard from "./components/TiltedCard";
 import Footer from "./components/Footer";
+import img from "./assets/img.png"
 function App() {
   return (
     <>
@@ -26,7 +27,7 @@ function App() {
         <center className="bg-linear-to-br from-blue-50 to-indigo-100 ">
           <div className="md:flex md:justify-between max-w-6xl  md:px-6 mt-14">
             <TiltedCard
-              imageSrc="./assets/img.png"
+              imageSrc={img}
               altText="Kendrick Lamar - GNX Album Cover"
               captionText="Expelee"
               containerHeight="300px"
@@ -45,7 +46,7 @@ function App() {
               }
             />
             <TiltedCard
-              imageSrc="./assets/img.png"
+              imageSrc={img}
               altText="Kendrick Lamar - GNX Album Cover"
               captionText="Expelee"
               containerHeight="300px"
@@ -64,7 +65,7 @@ function App() {
               }
             />
             <TiltedCard
-              imageSrc="./assets/img.png"
+              imageSrc={img}
               altText="Kendrick Lamar - GNX Album Cover"
               captionText="Expelee"
               containerHeight="300px"
