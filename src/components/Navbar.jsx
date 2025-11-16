@@ -18,7 +18,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="shrink-0"
           >
-            <h1 className="text-2xl font-bold 2xl:ml-14 text-black">Expelee</h1>
+            <h1 className="text-3xl font-bold 2xl:ml-14 text-black">Expelee</h1>
           </motion.div>
           <div className="flex justify-between items-center h-16  w-[700px]">
             {/* Desktop Menu */}

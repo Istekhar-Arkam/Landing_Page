@@ -1,8 +1,8 @@
-import { useEffect, useRef } from 'react';
-import IA from "../assets/IA.png"
-import { motion } from 'framer-motion';
-import  {gsap}  from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useEffect, useRef } from "react";
+import IA from "../assets/IA.png";
+import { motion } from "framer-motion";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,9 +23,9 @@ const Hero = () => {
         duration: 1,
         scrollTrigger: {
           trigger: imageRef.current,
-          start: 'top 80%',
-          end: 'top 20%',
-          toggleActions: 'play none none reverse',
+          start: "top 80%",
+          end: "top 20%",
+          toggleActions: "play none none reverse",
         },
       }
     );
@@ -40,14 +40,17 @@ const Hero = () => {
       transition: {
         delay: i * 0.2,
         duration: 0.8,
-        ease: 'easeOut',
+        ease: "easeOut",
       },
     }),
   };
 
   return (
-    <section id="home" className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 ">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-[#e5ab78]">
+    <section
+      id="home"
+      className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100 "
+    >
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-[#e5ab78]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content with Framer Motion fade-in */}
           <div className="space-y-6">
@@ -58,8 +61,7 @@ const Hero = () => {
               variants={textVariants}
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight"
             >
-              Welcome to the{' '}
-              <span className="text-primary">Future</span>
+              Welcome to the <span className="text-primary">Future</span>
             </motion.h1>
 
             <motion.p
@@ -69,8 +71,8 @@ const Hero = () => {
               variants={textVariants}
               className="text-xl md:text-2xl text-gray-600 leading-relaxed"
             >
-              Transform your ideas into reality with cutting-edge technology
-              and innovative solutions.
+              Transform your ideas into reality with cutting-edge technology and
+              innovative solutions.
             </motion.p>
 
             <motion.p
@@ -91,8 +93,10 @@ const Hero = () => {
               variants={textVariants}
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              <button className="bg-white text-black px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 
-              hover:text-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white">
+              <button
+                className="bg-white text-black px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 
+              hover:text-white transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1 border-2 border-white"
+              >
                 Get Started
               </button>
               <button className="bg-white text-primary px-8 py-3 rounded-lg text-lg font-semibold border-2 hover:text-black hover:bg-blue-600  transition-colors shadow-lg border-white">
@@ -106,16 +110,16 @@ const Hero = () => {
             <div className="w-full h-96 lg:h-[500px] bg-linear-to-br from-primary to-secondary rounded-2xl shadow-2xl flex items-center justify-center overflow-hidden">
               {/* Placeholder for image - replace with actual image */}
               <div className="text-black text-center p-8">
-               <img src={IA} 
-                className="w-52 h-48 mx-auto mb-4 "
+                <img
+                  src={IA}
+                  className="w-52 h-48 mx-auto mb-4 "
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
-               alt="" 
-               />
-                
+                  alt=""
+                />
+
                 <p className="text-2xl font-bold">Your Amazing Product</p>
-               
               </div>
             </div>
 
@@ -148,7 +152,9 @@ const Hero = () => {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Fast Performance</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
+              Fast Performance
+            </h3>
             <p className="text-gray-600">
               Lightning-fast load times and seamless user experience.
             </p>
@@ -170,7 +176,9 @@ const Hero = () => {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Secure & Reliable</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
+              Secure & Reliable
+            </h3>
             <p className="text-gray-600">
               Enterprise-grade security with 99.9% uptime guarantee.
             </p>
@@ -192,7 +200,9 @@ const Hero = () => {
                 />
               </svg>
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Easy Customization</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
+              Easy Customization
+            </h3>
             <p className="text-gray-600">
               Fully customizable to match your brand and requirements.
             </p>
