@@ -26,7 +26,7 @@ function App() {
         <center className="bg-linear-to-br from-blue-50 to-indigo-100 ">
           <div className="md:flex md:justify-between max-w-6xl  md:px-6 mt-14">
             <TiltedCard
-              imageSrc="../public/img.png"
+              imageSrc="./assets/img.png"
               altText="Kendrick Lamar - GNX Album Cover"
               captionText="Expelee"
               containerHeight="300px"
@@ -45,7 +45,7 @@ function App() {
               }
             />
             <TiltedCard
-              imageSrc="../public/img.png"
+              imageSrc="./assets/img.png"
               altText="Kendrick Lamar - GNX Album Cover"
               captionText="Expelee"
               containerHeight="300px"
@@ -64,7 +64,7 @@ function App() {
               }
             />
             <TiltedCard
-              imageSrc="../public/img.png"
+              imageSrc="./assets/img.png"
               altText="Kendrick Lamar - GNX Album Cover"
               captionText="Expelee"
               containerHeight="300px"
